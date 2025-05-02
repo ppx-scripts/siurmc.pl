@@ -38,7 +38,6 @@
             min-height: 100vh;
         }
 
-        /* Animowane tło */
         .magic-bg {
             position: fixed;
             top: 0;
@@ -58,7 +57,6 @@
             filter: blur(1px);
         }
 
-        /* Enchanting effect */
         .enchanting-glows {
             position: fixed;
             top: 0;
@@ -87,7 +85,6 @@
             75% { transform: translate(100px, -50px); }
         }
 
-        /* Nagłówek */
         header {
             background: rgba(74, 35, 90, 0.85);
             backdrop-filter: blur(10px);
@@ -196,7 +193,6 @@
             transform: rotate(90deg);
         }
 
-        /* Sekcja Hero */
         .hero {
             height: 100vh;
             display: flex;
@@ -358,7 +354,6 @@
             60% { transform: translateY(-10px) translateX(-50%); }
         }
 
-        /* Sekcje */
         section {
             padding: 120px 5%;
             position: relative;
@@ -403,7 +398,6 @@
             text-shadow: 0 0 5px rgba(187, 143, 206, 0.3);
         }
 
-        /* Tryby gry */
         .game-modes {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -515,7 +509,6 @@
             font-size: 1rem;
         }
 
-        /* Statystyki */
         .stats {
             background: url('https://imgur.com/d0op7Ck.png') center/cover no-repeat;
             padding: 100px 5%;
@@ -585,7 +578,6 @@
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
 
-        /* Zarząd */
         .staff {
             background: url('https://imgur.com/d0op7Ck.png') center/cover no-repeat;
             position: relative;
@@ -714,7 +706,6 @@
             box-shadow: 0 0 15px rgba(187, 143, 206, 0.7);
         }
 
-        /* Galeria */
         .gallery {
             background: rgba(74, 35, 90, 0.1);
         }
@@ -779,7 +770,6 @@
             transform: scale(1.2);
         }
 
-        /* Panel Zarządzania */
         .management {
             background: url('https://imgur.com/IUZVGaR.png') center/cover no-repeat;
             position: relative;
@@ -908,7 +898,6 @@
             font-weight: bold;
         }
 
-        /* Kontakt */
         .contact {
             background: rgba(74, 35, 90, 0.1);
         }
@@ -992,7 +981,6 @@
             box-shadow: 0 10px 30px rgba(106, 13, 173, 0.7);
         }
 
-        /* Dolacz */
         .join {
             text-align: center;
             background: url('https://imgur.com/2Asy3Uf.png') center/cover no-repeat;
@@ -1169,7 +1157,6 @@
             text-shadow: var(--glow);
         }
 
-        /* Powiadomienie */
         .notification {
             position: fixed;
             bottom: 30px;
@@ -1193,7 +1180,6 @@
             opacity: 1;
         }
 
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 12px;
         }
@@ -1212,7 +1198,6 @@
             background: var(--magenta);
         }
 
-        /* Responsywność */
         @media (max-width: 1200px) {
             .hero h1 {
                 font-size: 4rem;
@@ -1331,7 +1316,6 @@
     </style>
 </head>
 <body>
-    <!-- Magiczne tło -->
     <div class="magic-bg" id="magicBg"></div>
     <div class="enchanting-glows">
         <div class="enchanting-glow" style="top: 20%; left: 10%;"></div>
@@ -1339,7 +1323,6 @@
         <div class="enchanting-glow" style="top: 30%; left: 50%; animation-delay: 4s;"></div>
     </div>
 
-    <!-- Nagłówek -->
     <header id="header">
         <nav class="navbar">
             <a href="#home" class="logo">
@@ -1358,7 +1341,6 @@
         </nav>
     </header>
 
-    <!-- Sekcja Hero -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Odkryj Magie SiurMC</h1>
@@ -1375,14 +1357,12 @@
         </a>
     </section>
 
-    <!-- Tryby Gry -->
     <section class="modes" id="modes">
         <div class="section-title">
             <h2>Nasze Tryby Gry</h2>
             <p>Poznaj unikalne swiaty i mechaniki, które przygotowaliśmy specjalnie dla Ciebie</p>
         </div>
         <div class="game-modes">
-            <!-- Survival RPG -->
             <div class="mode-card">
                 <div class="mode-img">
                     <img src="svrpg.webp" alt="Survival RPG">
@@ -1402,7 +1382,6 @@
                 </div>
             </div>
 
-            <!-- EarthSMP -->
             <div class="mode-card">
                 <div class="mode-img">
                     <img src="earthsmp.png" alt="EarthSMP">
@@ -1422,7 +1401,6 @@
                 </div>
             </div>
 
-            <!-- DupeSMP -->
             <div class="mode-card">
                 <div class="mode-img">
                     <img src="dupesmp.png" alt="DupeSMP">
@@ -1444,7 +1422,6 @@
         </div>
     </section>
 
-<!-- Sekcja Światy i Krainy -->
 <section class="world-gallery" id="worlds">
     <div class="section-title">
         <h2>Odkryj Swiaty SiurMC</h2>
@@ -1460,7 +1437,6 @@
     </div>
 
     <div class="worlds-grid">
-        <!-- Królestwo Eldorii -->
         <div class="world-card kingdoms" data-world="eldoria">
             <div class="world-image">
                 <img src="krolestwo.png" alt="Królestwo">
@@ -1481,7 +1457,6 @@
             </div>
         </div>
 
-        <!-- Czarne Bagno -->
         <div class="world-card wilderness" data-world="blackmarsh">
             <div class="world-image">
                 <img src="czarnebagno.jpeg" alt="Czarne Bagno">
@@ -1502,7 +1477,6 @@
             </div>
         </div>
 
-        <!-- Katedra Cieni -->
         <div class="world-card dungeons" data-world="shadowcathedral">
             <div class="world-image">
                 <img src="katedra.png" alt="Katedra Cieni">
@@ -1523,7 +1497,6 @@
             </div>
         </div>
 
-        <!-- Latająca Wyspa -->
         <div class="world-card events" data-world="skyisland">
             <div class="world-image">
                 <img src="latajaca.jpeg" alt="Latająca Wyspa">
@@ -1795,7 +1768,6 @@
 </style>
 
 <script>
-    // Filtrowanie światów
     document.addEventListener('DOMContentLoaded', function() {
         const categoryBtns = document.querySelectorAll('.category-btn');
         const worldCards = document.querySelectorAll('.world-card');
@@ -1819,7 +1791,6 @@
             });
         });
 
-        // Interaktywna mapa
         const mapLocations = document.querySelectorAll('.map-location');
         mapLocations.forEach(location => {
             location.addEventListener('click', function() {
@@ -1838,7 +1809,6 @@
             });
         });
 
-        // Dodanie animacji highlight
         const style = document.createElement('style');
         style.textContent = `
             @keyframes highlight {
@@ -1851,14 +1821,12 @@
     });
 </script>
 
-    <!-- Zarząd -->
     <section class="staff" id="staff">
         <div class="section-title">
             <h2>Nasz Zarzad</h2>
             <p>Poznaj nasz doświadczony zespół, który dba o płynne działanie serwera</p>
         </div>
         <div class="staff-grid">
-            <!-- Właściciel -->
             <div class="staff-card">
                 <div class="staff-img">
                     <img src="pepex.jpg" alt="Właściciel">
@@ -1872,7 +1840,6 @@
                 </div>
             </div>
 
-            <!-- Administrator -->
             <div class="staff-card">
                 <div class="staff-img">
                     <img src="username.webp" alt="Administrator">
@@ -1886,7 +1853,6 @@
                 </div>
             </div>
 
-            <!-- aDMIN -->
             <div class="staff-card">
                 <div class="staff-img">
                     <img src="maxis.jpg" alt="Admin">
@@ -1900,7 +1866,6 @@
                 </div>
             </div>
 
-            <!-- Developer -->
             <div class="staff-card">
                 <div class="staff-img">
                     <img src="bruker.jpg" alt="Developer">
@@ -1916,7 +1881,6 @@
         </div>
     </section>
 
-<!-- Sekcja Dolacz do Społeczności -->
 <section class="community" id="community">
     <div class="section-title">
         <h2>Dolacz do Społeczności</h2>
@@ -1924,7 +1888,6 @@
     </div>
     
     <div class="community-grid">
-        <!-- Discord -->
         <div class="community-card discord">
             <div class="community-icon">
                 <i class="fab fa-discord"></i>
@@ -1939,8 +1902,7 @@
                 <span>1,245 online</span>
             </div>
         </div>
-        
-        <!-- Media Społecznościowe -->
+
         <div class="community-card social">
             <div class="community-icon">
                 <i class="fas fa-hashtag"></i>
@@ -2122,10 +2084,10 @@
         transition: all 0.3s ease;
     }
     
-    .social-links a:nth-child(1) { background: #1DA1F2; } /* Twitter */
-    .social-links a:nth-child(2) { background: #E1306C; } /* Instagram */
-    .social-links a:nth-child(3) { background: #FF0000; } /* YouTube */
-    .social-links a:nth-child(4) { background: #000000; } /* TikTok */
+    .social-links a:nth-child(1) { background: #1DA1F2; }
+    .social-links a:nth-child(2) { background: #E1306C; }
+    .social-links a:nth-child(3) { background: #FF0000; }
+    .social-links a:nth-child(4) { background: #000000; }
     
     .social-links a:hover {
         transform: translateY(-5px) scale(1.1);
@@ -2219,7 +2181,6 @@
 </style>
 
 <script>
-    // Aktualizacja liczby online na Discordzie (można zastąpić prawdziwym API)
     function updateDiscordOnline() {
         const onlineCount = document.querySelector('.online-count span:last-child');
         const randomChange = Math.floor(Math.random() * 20) - 10;
@@ -2228,10 +2189,8 @@
         onlineCount.textContent = newCount.toLocaleString() + ' online';
     }
     
-    // Symulacja zmiany liczby online co 30 sekund
     setInterval(updateDiscordOnline, 30000);
     
-    // Kopiowanie IP
     document.querySelector('.community-join .server-ip').addEventListener('click', function() {
         const ip = 'SiurMC.pl';
         navigator.clipboard.writeText(ip).then(() => {
@@ -2257,7 +2216,6 @@
         });
     });
     
-    // Animacja fadeInOut dla powiadomienia
     const style = document.createElement('style');
     style.textContent = `
         @keyframes fadeInOut {
@@ -2270,7 +2228,6 @@
     document.head.appendChild(style);
 </script>
 
-    <!-- Dolacz -->
     <section class="join" id="join">
         <div class="join-content">
             <h2>Gotowy na przygode?</h2>
@@ -2283,7 +2240,6 @@
         </div>
     </section>
 
-    <!-- Stopka -->
     <footer>
         <div class="footer-content">
             <div class="footer-column">
@@ -2326,17 +2282,14 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 SiurMC. Wszelkie prawa zastrzeżone. | Created by Pepex</p>
+            <p>&copy; 2025 SiurMC. Wszelkie prawa zastrzeżone. | Created by Zirex</p>
             <p style="margin-top: 10px;">SiurMC nie jest powiązany z Mojang Studios ani Microsoft. Minecraft jest znakiem towarowym Mojang Studios.</p>
         </div>
     </footer>
 
-    <!-- Powiadomienie -->
     <div class="notification" id="notification">Skopiowano adres serwera!</div>
 
-    <!-- Skrypty JavaScript -->
     <script>
-        // Responsywne menu
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
         const header = document.getElementById('header');
@@ -2347,7 +2300,6 @@
                 '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
 
-        // Scroll header
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
@@ -2356,7 +2308,6 @@
             }
         });
 
-        // Płynne przewijanie
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -2364,15 +2315,13 @@
                     behavior: 'smooth'
                 });
                 
-                // Zamknij menu mobilne po kliknięciu
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     hamburger.innerHTML = '<i class="fas fa-bars"></i>';
                 }
             });
         });
-
-        // Kopiowanie IP serwera
+        
         const serverIp = document.getElementById('serverIp');
         const notification = document.getElementById('notification');
 
@@ -2386,7 +2335,6 @@
             });
         });
 
-        // Panel zarządzania - zakładki
         const tabBtns = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
 
@@ -2394,38 +2342,30 @@
             btn.addEventListener('click', () => {
                 const tabId = btn.getAttribute('data-tab');
                 
-                // Usuń aktywną klasę ze wszystkich przycisków i zawartości
                 tabBtns.forEach(btn => btn.classList.remove('active'));
                 tabContents.forEach(content => content.classList.remove('active'));
                 
-                // Dodaj aktywną klasę do klikniętego przycisku i odpowiadającej zawartości
                 btn.classList.add('active');
                 document.getElementById(tabId).classList.add('active');
             });
         });
 
-        // Magiczne cząsteczki w tle
         const magicBg = document.getElementById('magicBg');
         const particleCount = 100;
 
         for (let i = 0; i < particleCount; i++) {
             const particle = document.createElement('div');
             particle.classList.add('magic-particle');
-            
-            // Losowe pozycje
+
             const posX = Math.random() * 100;
             const posY = Math.random() * 100;
             
-            // Losowe rozmiary
             const size = Math.random() * 6 + 2;
             
-            // Losowe opóźnienie animacji
             const delay = Math.random() * 5;
             
-            // Losowa prędkość animacji
             const duration = Math.random() * 15 + 10;
             
-            // Losowa przezroczystość
             const opacity = Math.random() * 0.5 + 0.1;
             
             particle.style.left = `${posX}%`;
@@ -2436,12 +2376,10 @@
             particle.style.animationDuration = `${duration}s`;
             particle.style.opacity = opacity;
             
-            // Losowy kolor
             const colors = ['#bb8fce', '#8e44ad', '#9b59b6', '#6a0dad'];
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             particle.style.backgroundColor = randomColor;
             
-            // Losowy kształt
             if (Math.random() > 0.7) {
                 particle.style.borderRadius = '0';
                 particle.style.transform = `rotate(${Math.random() * 360}deg)`;
@@ -2450,7 +2388,6 @@
             magicBg.appendChild(particle);
         }
 
-        // Animacja cząsteczek reagująca na ruch myszki
         document.addEventListener('mousemove', (e) => {
             const particles = document.querySelectorAll('.magic-particle');
             const mouseX = e.clientX;
@@ -2461,13 +2398,11 @@
                 const particleX = rect.left + rect.width / 2;
                 const particleY = rect.top + rect.height / 2;
                 
-                // Oblicz odległość od myszki
                 const distance = Math.sqrt(
                     Math.pow(mouseX - particleX, 2) + 
                     Math.pow(mouseY - particleY, 2)
                 );
                 
-                // Jeśli cząsteczka jest blisko myszki, odsuń ją
                 if (distance < 150) {
                     const angle = Math.atan2(particleY - mouseY, particleX - mouseX);
                     const force = 150 - distance;
@@ -2478,7 +2413,6 @@
                     particle.style.top = `${newY}px`;
                     particle.style.transition = 'all 0.3s ease-out';
                     
-                    // Powrót do pierwotnej pozycji
                     setTimeout(() => {
                         particle.style.transition = 'all 1s ease';
                         const originalX = particle.getAttribute('data-original-x');
@@ -2492,7 +2426,6 @@
             });
         });
 
-        // Zapisz oryginalne pozycje cząsteczek
         window.addEventListener('load', () => {
             const particles = document.querySelectorAll('.magic-particle');
             particles.forEach(particle => {
@@ -2504,7 +2437,6 @@
             });
         });
 
-        // Leniwe ładowanie obrazków
         document.addEventListener('DOMContentLoaded', function() {
             const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
             
@@ -2526,7 +2458,6 @@
             }
         });
 
-        // Animacja sekcji przy przewijaniu
         const animateOnScroll = () => {
             const sections = document.querySelectorAll('section');
             
@@ -2541,7 +2472,6 @@
             });
         };
 
-        // Ustawienie początkowego stylu dla sekcji
         document.querySelectorAll('section').forEach(section => {
             if (!section.classList.contains('hero')) {
                 section.style.opacity = '0';
@@ -2550,7 +2480,6 @@
             }
         });
 
-        // Obsługa zdarzenia scroll
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('load', animateOnScroll);
     </script>
